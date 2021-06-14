@@ -1,0 +1,64 @@
+@use '../custom' as *;
+@use '../components/mixin' as *;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&display=swap');
+
+
+
+.get-started{
+
+
+    .get-started--description{
+        padding: 1rem 3rem;
+ 
+
+        @include gradient;
+
+        color: $white;
+
+        .caption {
+            font-weight: 700;
+        font-family: 'Poppins',sans-serif;
+        }
+
+        .group{
+
+            div { 
+                    display: flex;
+                    align-items: center;
+                    align-items: center;
+            }
+            i{
+                font-size: 1.5rem;
+            }
+
+            p{
+                text-transform: capitalize;
+                display: inline-block;
+                padding-left: 1rem;
+            }
+        }
+
+
+    }
+
+    .get-started--form {
+
+        .caption{
+            background-clip: text;
+            display: block;
+            -webkit-text-fill-color:transparent;
+            background-image: linear-gradient(to right,$primary,$secondary);
+        }
+
+        textarea {
+            height: 9.1rem;
+        }
+
+        .mybtn {
+            color: $white;
+            border-radius:4rem;       
+            background-image: linear-gradient(to right,$primary,$secondary) !important;
+
+        }
+    }
+}

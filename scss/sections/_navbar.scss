@@ -1,0 +1,21 @@
+@use "../custom" as *;
+@use '../components/mixin' as *;
+
+.menu {
+  @include gradient();
+
+  .my-logo {
+    width: 100px;
+  }
+
+  
+  li {
+    padding: 0 0.3rem;
+
+    a {
+      text-transform: capitalize;
+      font-weight: 600;
+      color: $white !important;
+    }
+  }
+}

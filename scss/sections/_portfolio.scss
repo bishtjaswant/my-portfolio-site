@@ -1,0 +1,54 @@
+@use '../components/mixin' as *;
+@use '../custom'  as *;  
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&display=swap');
+
+
+.portfolio{
+    padding: 2rem;
+
+    .portfolio-box {
+        position: relative;
+        width: 100%;
+        height: 16.5rem;
+        overflow: hidden;
+        cursor: pointer;
+        margin: 1rem 0;
+        border-right: .47rem solid $primary;
+        border-top: .47rem solid $primary;
+
+     
+       
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .portfoliyo-info{
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+         
+            background: rgba($primary, 0.8);
+            height: 100%;
+            width: 100%;
+            transition: .3s linear;
+   
+            .caption {
+                color: $white;
+                @include absolute-center;
+                h5{
+                    font-size: 1rem;
+                    text-transform: capitalize;
+                    font-weight: 700;
+                }
+            }
+            
+        }
+
+        &:hover .portfoliyo-info{
+            opacity: 1;
+            top: 0;
+        }
+    }
+}

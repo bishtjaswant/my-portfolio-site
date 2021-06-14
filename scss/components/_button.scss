@@ -1,0 +1,55 @@
+@use  '../custom' as *;
+@use '../components/mixin' as *;
+
+
+.btn-rounded{
+
+    @include media-breakpoint-down(sm) { 
+        display: none;
+     }
+
+    padding:   0.967rem 3.999rem 0.967rem 0.877rem;
+     position: relative;
+        font-weight: 600;
+        margin: 0;
+        border: 0.2rem solid rgba($primary, 0.6);
+        transition: 0.4s linear;
+   text-transform: capitalize;
+
+
+        span{
+            position: absolute;
+            border-radius: 50%;
+            background-color: $primary;
+            top: 50%;
+                    
+            right: 5px;
+            height: 2.88rem;
+            width: 2.99rem;
+            transform: translateY(-50%);
+
+            i{
+                        
+            color: white;
+            font-size: 1.8rem;
+            line-height: 2.89rem;
+            }
+        }
+
+        &:hover{
+            @include gradient();
+            border: 0.2rem solid rgba($white, 0.6);
+            color: $white;
+
+            span {
+                background-color: rgba($black, 0.6);
+            }
+        } 
+
+
+
+
+
+
+
+}

@@ -1,0 +1,25 @@
+@use '../custom'  as *;  
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&display=swap');
+
+
+.offers {
+    margin-top: 1rem;
+    padding: 1rem 0; 
+
+
+    .wrapper{
+
+        h1{
+            color: $primary;
+
+            @include media-breakpoint-down(sm){
+                text-align: left;
+                font-size: 1.3rem;
+            }
+        }
+        p.desc {
+            line-height: 1.9;
+            color: $gray-700;
+        }
+    }
+}

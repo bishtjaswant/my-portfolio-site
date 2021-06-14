@@ -1,0 +1,26 @@
+@use '../custom'  as *;  
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&display=swap');
+
+
+.service{
+
+    .service-box{
+         margin-top: 5rem !important;
+         h2{ 
+             font-weight: 700;
+             font-size: 2.12rem;
+        }
+
+         @include media-breakpoint-down(sm){
+            h2{ 
+                font-size: 1.1rem;
+                color: pink ;
+         }
+         p {
+            text-align: center !important;
+            margin-top: .55rem;
+            
+        }
+         }
+    } 
+}

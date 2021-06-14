@@ -1,0 +1,115 @@
+@use '../custom'  as *;  
+@use "../components/mixin" as *;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&display=swap');
+
+.contact{
+    background:$black ;
+    margin: 0 !important;
+    padding: 0 !important;
+
+
+    color: $white;
+
+    &-detail{
+        height: 7rem;         
+       @include flexCenter(space-between,flex-start);
+
+
+        &--box{ 
+            
+            margin-top: 2rem;
+
+            @include flexCenter(flex-start,center);
+            i{
+                align-self: flex-start;
+                font-size: 2rem;
+                color: $primary;
+                margin-right: 1rem;
+            }
+            .wrapper {
+
+                p:first-child{ 
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 700;
+                    font-size: 1.1rem;
+                    margin: 0;
+                    padding: 0;
+                }
+
+
+                p:last-child{ 
+                    padding: 0;
+                    margin: 0;
+                    color: $gray-400; 
+                }
+
+            }
+        
+
+       
+      }
+
+
+      @include media-breakpoint-down(sm){
+         flex-direction: column;
+         align-items: center;
+         height:15rem;
+      }
+
+    }
+
+
+
+    .meet-with{
+        padding: 2rem 0;
+        background-color: $light-black;
+
+        .social {
+            i{
+                color:  $primary;
+                font-size: 2rem;
+                margin: 0 .11rem;
+                transition: .3s linear;
+
+                &:hover{
+                    color: $white;
+                }
+            }
+        }
+
+        @include media-breakpoint-down(sm){
+            margin-top: 4rem;
+            flex-direction: column;
+        }
+
+    }
+
+    .company {
+
+        &-detail {
+            margin: 0 1rem;
+            
+            p{
+                color: $gray-600;
+            }
+        }
+
+
+        .heading::after{
+                content: '';
+                display: block;
+                height: .14rem;
+
+                background: linear-gradient(to  right, $primary,$secondary);
+                margin-top: 1.8rem;
+                width: 50%;
+                @include media-breakpoint-down(sm){
+                   width: 13%;
+                }
+        }
+
+        @include media-breakpoint-down(sm){
+           flex-direction: column;
+        } 
+    }
+}

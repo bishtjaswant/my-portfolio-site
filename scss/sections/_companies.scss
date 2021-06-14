@@ -1,0 +1,44 @@
+@use '../custom'  as *;  
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&display=swap');
+
+
+.company{
+
+
+    @include media-breakpoint-down(sm){
+        h1{
+            font-size: 1.3rem;  
+        }
+    }
+   .companies{
+       
+    // border: 1px solid;
+    padding: 4rem 0 1rem .4rem;
+    margin-bottom: 1rem;
+
+    .company-wrapper{
+
+        margin: .23rem 0;
+        text-align: center;
+
+        @include media-breakpoint-down(sm) { 
+            margin: 1rem 0;
+         }
+
+         &:hover{
+             filter: grayscale(120);
+         }
+        img{
+            // max-width: 100%;
+            object-fit: contain;
+            height: 100%;
+            filter: drop-shadow(1);
+
+            @include media-breakpoint-down(sm) { 
+                height: 3rem;
+             }
+
+        }
+       }
+   }
+}

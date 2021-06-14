@@ -1,0 +1,13 @@
+@use '../custom' as *;
+@use '../components/mixin' as *;
+
+
+.faq {
+
+
+    .accordion {
+        .accordion-item{
+            margin: 1rem 0;
+        }
+    }
+}

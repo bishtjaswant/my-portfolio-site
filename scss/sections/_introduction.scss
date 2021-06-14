@@ -1,0 +1,56 @@
+@use '../custom' as *;
+@use '../components/mixin' as *;
+
+.introduction {
+  @include gradient();
+  padding-top: 5rem;
+
+  .right-box {
+    .vedio-box {
+      position: relative;
+
+      a {
+          // @include absolute-center();
+        span {
+          i {
+            color: $secondary;
+
+            font-size: 8rem;
+             
+          }
+        }
+      }
+    }
+  }
+
+  
+  @include media-breakpoint-down(md) { 
+    padding-top: 1rem;
+    }
+
+}
+
+
+.border-animation{ 
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  z-index: 2;
+  border: .2rem solid $white;
+  animation: pulseBorder 1.2s linear infinite;
+
+  &-1{
+    animation-duration: 1s;
+  }
+
+  &-2{
+    animation-duration: 1.2s;
+  }
+  &-3{
+    animation-duration: 1.4s;
+  }
+
+}

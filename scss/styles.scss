@@ -1,0 +1,28 @@
+// import customm bootsdtrap utility
+@use 'custom';
+
+//import components
+@use './components/animation';
+@use './components/button';
+@use './components/mixin';
+// @use './components/navbar';
+@use './components/typography'; 
+
+
+
+//import sectiions
+@use './sections/companies';
+@use './sections/faq';
+@use './sections/footer';
+@use './sections/get-started';
+@use './sections/introduction';
+@use './sections/navbar'; 
+@use './sections/testimonial';
+@use './sections/services';
+@use './sections/offers';
+@use './sections/portfolio';
+ 
+
+body{
+    -webkit-font-smoothing: antialiased;
+}
